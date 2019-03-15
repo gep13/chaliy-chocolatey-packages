@@ -1,7 +1,11 @@
 Install-ChocolateyPackage `
   -PackageName 'octave' `
   -InstallerType 'EXE'  `
-  -Url 'https://ftp.gnu.org/gnu/octave/windows/octave-4.2.0-w32-installer.exe' `
-  -Url64 'https://ftp.gnu.org/gnu/octave/windows/octave-4.2.0-w64-installer.exe' `
+  -Url 'https://ftpmirror.gnu.org/octave/windows/octave-5.1.0-w32-installer.exe' `
+  -Url64 'https://ftpmirror.gnu.org/octave/windows/octave-5.1.0-w64-installer.exe' `
+  -Checksum '99E6371494D2B9EF696D241E60D3EEEBA8B768CD14DB5CB46FBA33260A1AC940A7DEDF880D90C430D674A59FE63AC443AE641571E7D268803682DFD72808AE18' `
+  -ChecksumType 'SHA512' `
+  -Checksum64 '26C6E2F968D4DD164B9903291C58F77440AE001182376F7991EB591EAE55312F7652C507383ACFCB3E6BD831778D658EFB89C41F9405C06AD0C23F016F12F80F' `
+  -ChecksumType64 'SHA512' `
   -SilentArgs "/S" `
   -ValidExitCodes @(0)
